@@ -300,7 +300,7 @@
                 </address>
             </div>
             <div>
-                <h2 class="social-title">Приєднуйтесь</h2>
+                <p class="social-title">Приєднуйтесь</p>
                 <ul class="list social-links">
                     <li class="item"><a href="#" class="link social-link" aria-label="Instagram">
                             <svg class="social-icon">
@@ -324,17 +324,69 @@
                         </a></li>
                 </ul>
             </div>
+            <form class="footer-form-box" name="footer-form" autocomplete="on" novalidate>
+                <div class="footer-input">
+                <p class="footer-input-title">Підпишіться на розсилку</p>
+                <input class="footer-input-field" type="email" name="email" placeholder="E-mail">
+                </div>
+                <button class="footer-button" type="submit">
+                    Підписатись
+                    <svg class="icon-send" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>   
+            </form>
         </div>
     </footer>
 
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-button" data-modal-close>
+            <button class="close-button" type="button" data-modal-close>
                 <svg class="icon-close">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <div class="modal-container">
+                <h2 class="modal-title">Залишіть свої дані, ми вам передзвонимо</h2>
+                <form class="modal-form-box" name="main-form" autocomplete="on" novalidate>
+                    <label class="form-label" for="name">Ім'я</label>
+                    <div class="form-input">
+                        <input class="form-input-field" type="text" name="name" id="name">
+                        <svg class="form-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-person" aria-hidden="true"></use>
+                        </svg>
+                    </div>
+                    <label class="form-label" for="phone">Телефон</label>
+                    <div class="form-input">
+                        <input class="form-input-field" type="tel" name="phone" id="phone">
+                        <svg class="form-icon" width="13" height="13">
+                            <use href="./images/icons.svg#icon-phone" aria-hidden="true"></use>
+                        </svg>
+                    </div>
+                    <label class="form-label" for="mail">Пошта</label>
+                    <div class="form-input">
+                        <input class="form-input-field" type="email" name="mail" id="mail">
+                        <svg class="form-icon" width="15" height="12">
+                            <use href="./images/icons.svg#icon-mail" aria-hidden="true"></use>
+                        </svg>
+                    </div>
+                    <label class="form-label" for="comment">Коментар</label>
+                    <textarea class="form-comment" name="comment" id="comment" rows="6" placeholder="Введіть текст"></textarea>
+                    <div class="form-checkbox">
+                        <div class="form-checkbox-input">
+                            <input class="form-checkbox-field" type="checkbox" name="subscribe" id="subscribe" checked>
+                            <svg class="checkbox-icon">
+                                <use href="./images/icons.svg#"></use>
+                            </svg>
+                        </div>
+                        <label class="form-checkbox-label" for="subscribe">Погоджуюся з розсилкою та приймаю 
+                            <a href="#">Умови договору</a>
+                        </label>
+                    </div>
+                    <button class="form-button" type="submit">Надіслати</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>
