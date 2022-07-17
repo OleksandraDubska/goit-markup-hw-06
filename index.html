@@ -47,7 +47,7 @@
 
         <!-- Секція "Герой" -->
         <section class="hero">
-                <h1 class="hero-title">Ефективні рішення <br>для вашого бізнесу</h1>
+                <h1 class="hero-title">Ефективні рішення для<br> вашого бізнесу</h1>
                 <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>           
         </section>
 
@@ -324,10 +324,10 @@
                         </a></li>
                 </ul>
             </div>
-            <form class="footer-form-box" name="footer-form" autocomplete="on" novalidate>
+            <form class="footer-form-box" name="footer-form" autocomplete="on">
                 <div class="footer-input">
                 <p class="footer-input-title">Підпишіться на розсилку</p>
-                <input class="footer-input-field" type="email" name="email" placeholder="E-mail">
+                <input class="footer-input-field" type="email" name="email" placeholder="E-mail" required>
                 </div>
                 <button class="footer-button" type="submit">
                     Підписатись
@@ -349,40 +349,34 @@
             </button>
             <div class="modal-container">
                 <h2 class="modal-title">Залишіть свої дані, ми вам передзвонимо</h2>
-                <form class="modal-form-box" name="main-form" autocomplete="on" novalidate>
+                <form class="modal-form-box" name="main-form" autocomplete="on">
                     <label class="form-label" for="name">Ім'я</label>
                     <div class="form-input">
-                        <input class="form-input-field" type="text" name="name" id="name">
-                        <svg class="form-icon" width="12" height="12">
+                        <input class="form-input-field" type="text" name="name" id="name" required>
+                        <svg class="form-icon">
                             <use href="./images/icons.svg#icon-person" aria-hidden="true"></use>
                         </svg>
                     </div>
                     <label class="form-label" for="phone">Телефон</label>
                     <div class="form-input">
-                        <input class="form-input-field" type="tel" name="phone" id="phone">
-                        <svg class="form-icon" width="13" height="13">
+                        <input class="form-input-field" type="tel" name="phone" id="phone" required>
+                        <svg class="form-icon">
                             <use href="./images/icons.svg#icon-phone" aria-hidden="true"></use>
                         </svg>
                     </div>
                     <label class="form-label" for="mail">Пошта</label>
                     <div class="form-input">
-                        <input class="form-input-field" type="email" name="mail" id="mail">
-                        <svg class="form-icon" width="15" height="12">
+                        <input class="form-input-field" type="email" name="mail" id="mail" required>
+                        <svg class="form-icon">
                             <use href="./images/icons.svg#icon-mail" aria-hidden="true"></use>
                         </svg>
                     </div>
                     <label class="form-label" for="comment">Коментар</label>
-                    <textarea class="form-comment" name="comment" id="comment" rows="6" placeholder="Введіть текст"></textarea>
-                    <div class="form-checkbox">
-                        <div class="form-checkbox-input">
-                            <input class="form-checkbox-field" type="checkbox" name="subscribe" id="subscribe" checked>
-                            <svg class="checkbox-icon">
-                                <use href="./images/icons.svg#"></use>
-                            </svg>
-                        </div>
-                        <label class="form-checkbox-label" for="subscribe">Погоджуюся з розсилкою та приймаю 
-                            <a href="#">Умови договору</a>
-                        </label>
+                    <textarea class="form-comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+                    <div class="form-checkbox">       
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="subscribe" id="subscribe">
+                        <span class="checkbox-input-field"></span>           
+                        <label class="checkbox-label" for="subscribe">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
                     </div>
                     <button class="form-button" type="submit">Надіслати</button>
                 </form>
